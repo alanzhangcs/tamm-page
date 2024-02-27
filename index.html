@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Symbol-LLM</title>
+  <link rel="icon" type="image/x-icon" href="static/images/logo.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+<!--             <div class="title is-1 publication-title" style="display: flex; align-items: center; justify-content: center;">
+              <img src="static/images/logo.png" alt="Symbol-LLM Logo" style="max-width: 100px; max-height: 100px;">
+              Symbol-LLM: Towards Foundational Symbol-centric Interface For Large Language Models
+            </div> -->
+            <h1 class="title is-1 publication-title">
+              <img src="static/images/logo.png" width="120" alt="Symbol-LLM" />
+              <br>
+              Symbol-LLM: Towards Foundational Symbol-centric Interface for Large Language Models
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="xufangzhi.github.io" target="_blank">Fangzhi Xu</a><sup>1,2</sup>,</span>
+                <span class="author-block">
+                  <a href="https://lividwo.github.io/zywu.github.io/" target="_blank">Zhiyong Wu</a><sup>2,*</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://qiushisun.github.io/" target="_blank">Qiushi Sun</a><sup>3</sup>,</span>
+                    <span class="author-block">
+                     <a href="https://drsy.github.io/" target="_blank">Siyu Ren</a><sup>4</sup>,</span>
+                     <span class="author-block">
+                      <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Fei Yuan</a><sup>2</sup>,</span>
+                      <span class="author-block">
+                       <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Shuai Yuan</a><sup>5</sup>,</span>
+                       <span class="author-block">
+                        <a href="https://scholar.google.com.hk/citations?user=k8BKz0MAAAAJ&hl=zh-CN" target="_blank">Qika Lin</a><sup>3</sup>,</span>
+                        <span class="author-block">
+                         <a href="https://scholar.google.com/citations?user=gFtI-8QAAAAJ&hl=en" target="_blank">Yu Qiao</a><sup>2</sup>,</span>
+                         <span class="author-block">
+                          <a href="https://gr.xjtu.edu.cn/en/web/liukeen/4" target="_blank">Jun Liu</a><sup>1</sup></span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Xi'an Jiaotong University</span>
+                    <span class="author-block"><sup>2</sup>Shanghai Artificial Intellegence Laboratory</span><br>
+                    <span class="author-block"><sup>3</sup>National University of Singapore</span>
+                    <span class="author-block"><sup>4</sup>Shanghai Jiao Tong University</span>
+                    <span class="author-block" style="display: block;"><sup>5</sup>Hongkong University of Science and Technology</span>
+                    <span class="eql-cntrb"><small><sup>*</sup>Corresponding Author.</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                      <span class="link-block">
+                          <a href="https://arxiv.org/abs/2311.09278" target="_blank"
+                              class="external-link button is-normal is-rounded is-dark">
+                              <span class="icon">
+                                  <i class="fas fa-file-pdf"></i>
+                              </span>
+                              <span>Paper</span>
+                          </a>
+                      </span>
+
+                      <!-- Github link -->
+                      <span class="link-block">
+                          <a href="https://github.com/xufangzhi/Symbol-LLM" target="_blank"
+                              class="external-link button is-normal is-rounded is-dark">
+                              <span class="icon">
+                                  <i class="fab fa-github"></i>
+                              </span>
+                              <span>Code</span>
+                          </a>
+                      </span>
+
+                      <!-- ArXiv abstract Link -->
+                      <span class="link-block">
+                          <a href="https://arxiv.org/abs/2311.09278" target="_blank"
+                              class="external-link button is-normal is-rounded is-dark">
+                              <span class="icon">
+                                  <i class="ai ai-arxiv"></i>
+                              </span>
+                              <span>arXiv</span>
+                          </a>
+                      </span>
+
+                      <span class="link-block">
+                          <a href="https://huggingface.co/Symbol-LLM/Symbol-LLM-7B-Instruct" target="_blank"
+                              class="external-link button is-normal is-rounded is-dark">
+                              <span class="icon">
+                                  🤗
+                              </span>
+                              <span>Models</span>
+                          </a>
+                      </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Image carousel -->
+  <section class="hero">
+      <div class="hero-body">
+          <div class="container is-max-desktop">
+              <div class="columns is-centered">
+                  <div class="column is-four-fifths">
+                      <div class="item">
+                          <!-- Your image here -->
+                          <img src="static/images/Model.png" alt="symbol-llm" />
+                          <h2 class="subtitle" style="font-size: 16px;">
+                              Figure 1: Model structure of Symbol LLM. (a) is two training stages, Injection stage and Infusion stage. (b) is the test stage with three parts of tasks, symbolic tasks, general tasks and Symbol+Delegation setting.
+                          </h2>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- End image carousel -->
+
+  
+  <!-- Paper abstract -->
+<!--   <section class="hero">
+      <div class="hero-body">
+          <div class="container is-max-desktop">
+              <div class="columns is-centered">
+                  <div class="column has-text-centered">
+                      <h2 class="title is-3">Abstract</h2>
+                      <div class="content has-text-justified">
+                          <p>
+                              Large Language Models (LLMs) have greatly propelled the progress in natural language(NL)-centric tasks based on NL interface. However, the NL form is not enough for world knowledge. Current works focus on this question by injecting specific symbolic knowledge into LLM, which ignore two critical challenges: the interrelations between various symbols and the balance between symbolic-centric and NL-centric capabilities. In this work, we tackle these challenges from both a data and framework perspective and introduce Symbol-LLM series models. First, we collect 34 symbolic tasks, covering ~20 different forms, which are unified to capture symbol interrelations. Then, a two-stage tuning framework succeeds in injecting symbolic knowledge without loss of the generality ability. Extensive experiments on both symbol- and NL-centric tasks demonstrate the balanced and superior performances of Symbol-LLM series models.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section> -->
+  <!-- End paper abstract -->
+
+  
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+      <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+              <div class="column is-four-fifths">
+                  <div class="content has-text-justified">
+                      <div class="content">
+                          <p style="font-size: 1.1em;">
+                              Large Language Models (LLMs) have greatly propelled the progress in natural language(NL)-centric tasks based on NL interface. However, the NL form is not enough for world knowledge. Current works focus on this question by injecting specific symbolic knowledge into LLM, which ignore two critical challenges: the interrelations between various symbols and the balance between symbolic-centric and NL-centric capabilities. In this work, we tackle these challenges from both a data and framework perspective and introduce Symbol-LLM series models. First, we collect 34 symbolic tasks, covering ~20 different forms, which are unified to capture symbol interrelations. Then, a two-stage tuning framework succeeds in injecting symbolic knowledge without loss of the generality ability. Extensive experiments on both symbol- and NL-centric tasks demonstrate the balanced and superior performances of Symbol-LLM series models.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  </section>
+
+  <section class="hero is-small">
+      <div class="hero-body">
+          <div class="container  is-max-desktop">
+              <div class="columns is-centered has-text-centered">
+                  <div class="column is-four-fifths">
+                      <h2 class="title is-3">Overall Performances</h2>
+                      <div class="item">
+                          <!-- Your image here -->
+                          <img src="static/images/Overall.png" alt="symbol" />
+                          <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+                              Figure 2: Overall performance comparisons.
+                          </h2>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  <section class="hero is-small">
+      <div class="hero-body">
+          <div class="container  is-max-desktop">
+              <div class="columns is-centered has-text-centered">
+                  <div class="column is-four-fifths">
+                      <h2 class="title is-3">Results on Symbolic Tasks</h2>
+                      <div class="item">
+                          <!-- Your image here -->
+                          <img src="static/images/results_on_symbolic_tasks.png" alt="symbol" />
+                          <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+                              Figure 3: Results on 34 symbolic generation tasks.
+                          </h2>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="hero is-small">
+      <div class="hero-body">
+          <div class="container  is-max-desktop">
+              <div class="columns is-centered has-text-centered">
+                  <div class="column is-four-fifths">
+                      <h2 class="title is-3">Results on General Tasks</h2>
+                      <div class="item">
+                          <!-- Your image here -->
+                          <img src="static/images/results_on_general_tasks.png" alt="symbol" />
+                          <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+                              Figure 4: Results on general tasks.
+                          </h2>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  <section class="hero is-small">
+      <div class="hero-body">
+          <div class="container  is-max-desktop">
+              <div class="columns is-centered has-text-centered">
+                  <div class="column is-four-fifths">
+                      <h2 class="title is-3">Results on Symbol+Delegation Tasks</h2>
+                      <div class="item">
+                          <!-- Your image here -->
+                          <img src="static/images/results_on_math_reason.png" alt="symbol" />
+                          <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+                              Figure 5: Math Reasoning.
+                          </h2>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{xu2023symbol,
+  title={Symbol-LLM: Towards Foundational Symbol-centric Interface For Large Language Models},
+  author={Xu, Fangzhi and Wu, Zhiyong and Sun, Qiushi and Ren, Siyu and Yuan, Fei and Yuan, Shuai and Lin, Qika and Qiao, Yu and Liu, Jun},
+  journal={arXiv preprint arXiv:2311.09278},
+  year={2023}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
