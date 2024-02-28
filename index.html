@@ -192,32 +192,31 @@
                 <h2 class="title is-3">Approach</h2>
 
                 <div class="content has-text-justified">
-                    <img src="./static/images/HASSOD-two-stage.png" alt="Two-Stage Discover-and-Learn Approach"
+                    <img src="./static/images/model.png" alt="Two-Stage Discover-and-Learn Approach"
                          style="max-width: 100%; height: auto;">
                     <p>
-                        HASSOD adopts a two-stage discover-and-learn process to learn a self-supervised object detector.
-                        In the first stage, we discover objects from unlabeled images using self-supervised
-                        representations, and generate a set of initial pseudo-labels.
-                        Then in the second stage, we learn an object detector based on the initial pseudo-labels, and
-                        smoothly refine the model by self-training.
+                        In Stage 1, TAMM fine-tunes a lightweight CLIP Image Adapter (CIA) through contrastive learning
+                        and re-aligns the image features with the text features to alleviate the domain shift originated
+                        from rendered images.
                     </p>
                     <p>
-                        The first stage is based on pre-trained, fixed visual features,
-                        and the second stage learns an object detector to improve over the fixed visual features and
-                        pseudo-labels.
-                    </p>
-                </div>
 
-                <div class="content has-text-justified">
-                    <img src="./static/images/HASSOD-main-new.png" alt="Hierarchical Adaptive Clustering"
-                         style="max-width: 100%; height: auto;">
+                        In Stage 2, TAMM introduces Image Alignment Adapter (IAA) and Text Alignment Adapter (TAA) to
+                        decouple 3D
+                        representations into two sub-spaces: one focusing more on visual attributes and the other for
+                        semantic understanding,
+                        ensuring a more comprehensive and effective
+                        multi-modal pre-training strategy. Right: TAMM adaptively utilizes decoupled 3D features for
+                        various downstream tasks including linear
+                        probing classification (top) and zero-shot classification (bottom), achieving more robust
+                        classification results.
+                    </p>
+
                     <p>
-                        HASSOD creates a set of pseudo-labels as the initial self-supervision source.
-                        We propose a hierarchical adaptive clustering strategy to discover object masks as
-                        pseudo-labels,
-                        using only unlabeled images and a frozen self-supervised visual backbone.
-                        Most importantly, we incorporate the concept of hierarchical levels into object masks
-                        by leveraging the coverage relations between them.
+                        TAMM adaptively utilizes decoupled 3D features for
+                        various downstream tasks including linear
+                        probing classification (top) and zero-shot classification (bottom), achieving more robust
+                        classification results.
                     </p>
                 </div>
             </div>
