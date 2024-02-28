@@ -1,63 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="description"
-        content="Fully self-supervised model that learns to detect objects and understand their compositions.">
-  <meta name="keywords" content="HASSOD, self-supervised learning, object detection">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TAMM: TriAdapter Multi-Modal Learning for 3D Shape Understanding</title>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="Fully self-supervised model that learns to detect objects and understand their compositions.">
+    <meta name="keywords" content="HASSOD, self-supervised learning, object detection">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TAMM: TriAdapter Multi-Modal Learning for 3D Shape Understanding</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
 
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="stylesheet" href="./static/css/button_style.css">
-  <link rel="icon" href="./static/images/favicon.png">
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./static/css/button_style.css">
+    <link rel="icon" href="./static/images/favicon.png">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script defer src="./static/js/brands.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script defer src="./static/js/brands.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
 </head>
 
 <body>
 
 <section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">TAMM: TriAdapter Multi-Modal Learning for 3D Shape Understanding</h1>
-          <div class="is-size-5 publication-authors">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">TAMM: TriAdapter Multi-Modal Learning for 3D Shape
+                        Understanding</h1>
+                    <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://alanzhangcs.github.io/">Zhihao Zhang*</a><sup>1</sup>,
+              <a href="https://alanzhangcs.github.io/">Zhihao Zhang</a><sup>1</sup>,
             </span>
-            <span class="author-block">
-              <a href="https://shengcao-cao.github.io/">Shengcao Cao*</a><sup>2</sup>,
+                        <span class="author-block">
+              <a href="https://shengcao-cao.github.io/">Shengcao Cao</a><sup>2</sup>,
             </span>
-            <span class="author-block">
+                        <span class="author-block">
               <a href="https://yxw.web.illinois.edu/">Yu-Xiong Wang</a><sup>2</sup>
             </span>
-          </div>
+                    </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Xi'an Jiaotong University</span>
-            <span class="author-block"><sup>2</sup>University of Illinois at Urbana-Champaign,</span>
-          </div>
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block"><sup>1</sup>Xi'an Jiaotong University</span>
+                        <span class="author-block"><sup>2</sup>University of Illinois at Urbana-Champaign,</span>
+                    </div>
 
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <!-- PDF Link. -->
+                            <span class="link-block">
                 <a href="https://arxiv.org/abs/2402.03311"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -66,36 +67,36 @@
                   <span>arXiv</span>
                 </a>
               </span>
-<!--              <span class="link-block">-->
-<!--                <a href="https://openreview.net/pdf?id=sqkGJjIRfG"-->
-<!--                   class="external-link button is-normal is-rounded is-dark">-->
-<!--                  <span class="icon">-->
-<!--                      <i class="fas fa-file-pdf"></i>-->
-<!--                  </span>-->
-<!--                  <span>OpenReview</span>-->
-<!--                </a>-->
-<!--              </span>-->
-              <!-- Video Link. -->
-<!--              <span class="link-block">-->
-<!--                <a href="https://www.youtube.com/watch?v=s8u7tEKg5ew"-->
-<!--                   class="external-link button is-normal is-rounded is-dark">-->
-<!--                  <span class="icon">-->
-<!--                      <i class="fab fa-youtube"></i>-->
-<!--                  </span>-->
-<!--                  <span>Video (YouTube)</span>-->
-<!--                </a>-->
-<!--              </span>-->
-<!--              <span class="link-block">-->
-<!--                <a href="https://www.bilibili.com/video/BV1pg4y1Z7CK"-->
-<!--                   class="external-link button is-normal is-rounded is-dark">-->
-<!--                  <span class="icon">-->
-<!--                      <i class="fa-brands fa-bilibili"></i>-->
-<!--                  </span>-->
-<!--                  <span>Video (Bilibili)</span>-->
-<!--                </a>-->
-<!--              </span>-->
-              <!-- Code Link. -->
-              <span class="link-block">
+                            <!--              <span class="link-block">-->
+                            <!--                <a href="https://openreview.net/pdf?id=sqkGJjIRfG"-->
+                            <!--                   class="external-link button is-normal is-rounded is-dark">-->
+                            <!--                  <span class="icon">-->
+                            <!--                      <i class="fas fa-file-pdf"></i>-->
+                            <!--                  </span>-->
+                            <!--                  <span>OpenReview</span>-->
+                            <!--                </a>-->
+                            <!--              </span>-->
+                            <!-- Video Link. -->
+                            <!--              <span class="link-block">-->
+                            <!--                <a href="https://www.youtube.com/watch?v=s8u7tEKg5ew"-->
+                            <!--                   class="external-link button is-normal is-rounded is-dark">-->
+                            <!--                  <span class="icon">-->
+                            <!--                      <i class="fab fa-youtube"></i>-->
+                            <!--                  </span>-->
+                            <!--                  <span>Video (YouTube)</span>-->
+                            <!--                </a>-->
+                            <!--              </span>-->
+                            <!--              <span class="link-block">-->
+                            <!--                <a href="https://www.bilibili.com/video/BV1pg4y1Z7CK"-->
+                            <!--                   class="external-link button is-normal is-rounded is-dark">-->
+                            <!--                  <span class="icon">-->
+                            <!--                      <i class="fa-brands fa-bilibili"></i>-->
+                            <!--                  </span>-->
+                            <!--                  <span>Video (Bilibili)</span>-->
+                            <!--                </a>-->
+                            <!--              </span>-->
+                            <!-- Code Link. -->
+                            <span class="link-block">
                 <a href="https://github.com/Shengcao-Cao/HASSOD"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -104,212 +105,182 @@
                   <span>Code</span>
                   </a>
               </span>
-            </div>
+                        </div>
 
-          </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 
 <section class="hero teaser">
-  <div class="container ">
-    <div class="hero-body">
-      <img src="./static/images/teaser.png"
+    <div class="container ">
+        <div class="hero-body">
+            <img src="./static/images/teaser.png"
                  class="teaser-image"
                  alt="teaser image."/>
 
-      <h2 class="subtitle has-text-centered">
-        We propose PartSLIP, a zero/few-shot method for 3D point cloud part segmentation by leveraging pretrained image-language models. The figure shows our semantic segmentation results.
-      </h2>
+            <h2 class="subtitle has-text-centered">
+                We propose a novel multi-modal learning framework TAMM with two learning stages and three unified
+                adapter modules. Our proposed TAMM better exploits both image and language modalities and improves 3D
+                shape representations.
+            </h2>
+        </div>
     </div>
-  </div>
 </section>
 
-<section class="hero teaser">
+
+<section class="section">
     <div class="container is-max-desktop">
-      <div class="hero-body">
-        <!-- Image Container -->
-        <!-- Two images in two rows -->
-        <!-- <div class="image-container" style="display: flex; flex-direction: column; align-items: center;">
-            <img src="./static/images/HASSOD-gif.gif" alt="Teaser Image Dynamic" style="width: 50%; margin-bottom: 10px;">
-            <img src="./static/images/HASSOD-teaser.png" alt="Teaser Image Static" style="width: 100%; margin-bottom: 10px;">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        The limited scale of current 3D shape datasets hinders the advancements in 3D shape
+                        understanding, and motivates multi-modal learning approaches which transfer learned knowledge
+                        from data-abundant 2D image and language modalities to 3D shapes. However, even though the image
+                        and language representations have been aligned by cross-modal models like CLIP, we find that the
+                        image modality fails to contribute as much as the language in existing multi-modal 3D
+                        representation learning methods. This is attributed to the domain shift in the 2D images and the
+                        distinct focus of each modality.
+                    </p>
+                    <p>
+                        To more effectively leverage both modalities in the
+                        pre-training, we introduce TriAdapter Multi-Modal Learning (TAMM) -- a novel two-stage learning
+                        approach based on three synergetic adapters. First, our CLIP Image Adapter mitigates the domain
+                        gap between 3D-rendered images and natural images, by adapting the visual representations of
+                        CLIP for synthetic image-text pairs. Subsequently, our Dual Adapters decouple the 3D shape
+                        representation space into two complementary sub-spaces: one focusing on visual attributes and
+                        the other for semantic understanding, which ensure a more comprehensive and effective
+                        multi-modal pre-training.
+                    </p>
+                    <p>
+                        Extensive experiments demonstrate that TAMM consistently enhances 3D
+                        representations for a wide range of 3D encoder architectures, pre-training datasets, and
+                        downstream tasks. Notably, we boost the zero-shot classification accuracy on Objaverse-LVIS from
+                        46.8 to 50.7, and improve the 5-way 10-shot linear probing classification accuracy on ModelNet40
+                        from 96.1 to 99.0.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--/ Abstract. -->
+
+        <!-- Paper video. -->
+        <!-- <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Video</h2>
+            <div class="publication-video">
+              <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
         </div> -->
-        <!-- Two images side by side -->
-        <div class="image-container" style="display: flex; justify-content: center;">
-            <img src="./static/images/teaser.png" alt="Teaser Image Static" style="width: 60%; height: auto; object-fit: contain;">
-        </div>
-        <!-- Caption -->
-        <h2 class="subtitle has-text-centered">
-          <p>
-            HASSOD is a fully self-supervised approach for object detection and instance segmentation,
-          </p>
-          <p>
-            demonstrating a significant improvement over the previous state-of-the-art methods
-          </p>
-          <p>
-            by discovering a more comprehensive range of objects.
-          </p>
-          <p>
-            Moreover, HASSOD understands the part-to-whole object composition like humans do,
-          </p>
-          <p>
-            while previous methods cannot.
-          </p>
-          <p>
-            Notably, we improve class-agnostic Mask AR from 20.2 to 22.5 on LVIS,
-          </p>
-          <p>
-            and from 17.0 to 26.0 on SA-1B.
-          </p>
-        </h2>
-      </div>
+        <!--/ Paper video. -->
     </div>
 </section>
 
 <section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            The human visual perception system demonstrates exceptional capabilities in learning
-            without explicit supervision and understanding the part-to-whole composition of objects.
-            Drawing inspiration from these two abilities,
-            we propose Hierarchical Adaptive Self-Supervised Object Detection (HASSOD),
-            a novel approach that learns to detect objects
-            and understand their compositions without human supervision.
-          </p>
-          <p>
-            HASSOD employs a hierarchical adaptive clustering strategy
-            to group regions into object masks based on self-supervised visual representations,
-            adaptively determining the number of objects per image.
-            Furthermore, HASSOD identifies the hierarchical levels of objects in terms of composition,
-            by analyzing coverage relations between masks and constructing tree structures.
-            This additional self-supervised learning task leads to
-            improved detection performance and enhanced interpretability.
-            Lastly, we abandon the inefficient multi-round self-training process utilized in prior methods
-            and instead adapt the Mean Teacher framework from semi-supervised learning,
-            which leads to a smoother and more efficient training process.
-          </p>
-          <p>
-            Through extensive experiments on prevalent image datasets,
-            we demonstrate the superiority of HASSOD over existing methods,
-            thereby advancing the state of the art in self-supervised object detection.
-            Notably, we improve Mask AR from 20.2 to 22.5 on LVIS, and from 17.0 to 26.0 on SA-1B.
-          </p>
+
+    <div class="container is-max-desktop">
+
+        <div class="columns is-centered">
+            <div class="column is-full-width">
+                <h2 class="title is-3">Approach</h2>
+
+                <div class="content has-text-justified">
+                    <img src="./static/images/HASSOD-two-stage.png" alt="Two-Stage Discover-and-Learn Approach"
+                         style="max-width: 100%; height: auto;">
+                    <p>
+                        HASSOD adopts a two-stage discover-and-learn process to learn a self-supervised object detector.
+                        In the first stage, we discover objects from unlabeled images using self-supervised
+                        representations, and generate a set of initial pseudo-labels.
+                        Then in the second stage, we learn an object detector based on the initial pseudo-labels, and
+                        smoothly refine the model by self-training.
+                    </p>
+                    <p>
+                        The first stage is based on pre-trained, fixed visual features,
+                        and the second stage learns an object detector to improve over the fixed visual features and
+                        pseudo-labels.
+                    </p>
+                </div>
+
+                <div class="content has-text-justified">
+                    <img src="./static/images/HASSOD-main-new.png" alt="Hierarchical Adaptive Clustering"
+                         style="max-width: 100%; height: auto;">
+                    <p>
+                        HASSOD creates a set of pseudo-labels as the initial self-supervision source.
+                        We propose a hierarchical adaptive clustering strategy to discover object masks as
+                        pseudo-labels,
+                        using only unlabeled images and a frozen self-supervised visual backbone.
+                        Most importantly, we incorporate the concept of hierarchical levels into object masks
+                        by leveraging the coverage relations between them.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <div class="columns is-centered">
+            <div class="column is-full-width">
+                <h2 class="title is-3">Results</h2>
+
+                <div class="content has-text-justified">
+                    <p>
+                        HASSOD significantly outperforms the previous self-supervised methods (e.g., FreeSOLO and
+                        CutLER)
+                        in terms of average recall (Mask AR) at all object scales (Small, Medium, and Large).
+                        For example, HASSOD improves Mask AR from 17.0 to 26.0 on SA-1B.
+                        HASSOD also leads to a reduced gap between fully self-supervised models and the supervised model
+                        SAM.
+                        Notably, HASSOD only uses 1/5 of training images and 1/12 of training iterations as CutLER.
+                    </p>
+                </div>
+
+                <div class="content has-text-centered">
+                    Click on the buttons below to see the visual results on different datasets.
+                    <!-- Buttons for Selecting Datasets -->
+                    <div class="buttons is-centered">
+                        <button onclick="showImage('lvis')">LVIS</button>
+                        <button onclick="showImage('objects365')">Objects365</button>
+                        <button onclick="showImage('sa1b')">SA-1B</button>
+                    </div>
+
+                    <!-- Containers for Images -->
+                    <div id="lvis" class="vis-image-container" style="display: none;">
+                        <img src="static/images/HASSOD-lvis.png" alt="LVIS Results">
+                    </div>
+                    <div id="objects365" class="vis-image-container" style="display: none;">
+                        <img src="static/images/HASSOD-obj.png" alt="Objects365 Results">
+                    </div>
+                    <div id="sa1b" class="vis-image-container" style="display: none;">
+                        <img src="static/images/HASSOD-sa1b.png" alt="SA-1B Results">
+                    </div>
+
+                    <script>
+                        function showImage(dataset) {
+                            // Hide all images
+                            document.querySelectorAll('.vis-image-container').forEach(function (el) {
+                                el.style.display = 'none';
+                            });
+
+                            // Show the selected image
+                            document.getElementById(dataset).style.display = 'block';
+                        }
+                    </script>
+                </div>
+
+            </div>
+        </div>
     </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
-  </div>
-</section>
-
-<section class="section">
-
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Approach</h2>
-
-        <div class="content has-text-justified">
-          <img src="./static/images/HASSOD-two-stage.png" alt="Two-Stage Discover-and-Learn Approach" style="max-width: 100%; height: auto;">
-          <p>
-            HASSOD adopts a two-stage discover-and-learn process to learn a self-supervised object detector.
-            In the first stage, we discover objects from unlabeled images using self-supervised representations, and generate a set of initial pseudo-labels.
-            Then in the second stage, we learn an object detector based on the initial pseudo-labels, and smoothly refine the model by self-training.
-          </p>
-          <p>
-            The first stage is based on pre-trained, fixed visual features,
-            and the second stage learns an object detector to improve over the fixed visual features and pseudo-labels.
-          </p>
-        </div>
-
-        <div class="content has-text-justified">
-          <img src="./static/images/HASSOD-main-new.png" alt="Hierarchical Adaptive Clustering" style="max-width: 100%; height: auto;">
-          <p>
-            HASSOD creates a set of pseudo-labels as the initial self-supervision source.
-            We propose a hierarchical adaptive clustering strategy to discover object masks as pseudo-labels,
-            using only unlabeled images and a frozen self-supervised visual backbone.
-            Most importantly, we incorporate the concept of hierarchical levels into object masks
-            by leveraging the coverage relations between them. 
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Results</h2>
-        
-        <div class="content has-text-justified">
-          <p>
-            HASSOD significantly outperforms the previous self-supervised methods (e.g., FreeSOLO and CutLER)
-            in terms of average recall (Mask AR) at all object scales (Small, Medium, and Large).
-            For example, HASSOD improves Mask AR from 17.0 to 26.0 on SA-1B.
-            HASSOD also leads to a reduced gap between fully self-supervised models and the supervised model SAM.
-            Notably, HASSOD only uses 1/5 of training images and 1/12 of training iterations as CutLER.
-          </p>
-        </div>
-
-        <div class="content has-text-centered">
-          Click on the buttons below to see the visual results on different datasets.
-          <!-- Buttons for Selecting Datasets -->
-          <div class="buttons is-centered">
-            <button onclick="showImage('lvis')">LVIS</button>
-            <button onclick="showImage('objects365')">Objects365</button>
-            <button onclick="showImage('sa1b')">SA-1B</button>
-          </div>
-
-          <!-- Containers for Images -->
-          <div id="lvis" class="vis-image-container" style="display: none;">
-            <img src="static/images/HASSOD-lvis.png" alt="LVIS Results">
-          </div>
-          <div id="objects365" class="vis-image-container" style="display: none;">
-            <img src="static/images/HASSOD-obj.png" alt="Objects365 Results">
-          </div>
-          <div id="sa1b" class="vis-image-container" style="display: none;">
-            <img src="static/images/HASSOD-sa1b.png" alt="SA-1B Results">
-          </div>
-
-          <script>
-            function showImage(dataset) {
-              // Hide all images
-              document.querySelectorAll('.vis-image-container').forEach(function(el) {
-                el.style.display = 'none';
-              });
-            
-              // Show the selected image
-              document.getElementById(dataset).style.display = 'block';
-            }
-          </script>
-        </div>
-
-      </div>
-    </div>
-  </div>
 </section>
 
 <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>
+    <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>
     @inproceedings{cao2023hassod,
       title={{HASSOD}: Hierarchical Adaptive Self-Supervised Object Detection},
       author={Cao, Shengcao and Joshi, Dhiraj and Gui, Liangyan and Wang, Yu-Xiong},
@@ -317,23 +288,23 @@
       year={2023}
     }
     </code></pre>
-  </div>
+    </div>
 </section>
 
 <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>,
-            licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+                    <p>
+                        This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>,
+                        licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                        Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </footer>
 
 </body>
