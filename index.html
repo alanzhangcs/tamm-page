@@ -183,6 +183,7 @@
     </div>
 </section>
 
+
 <section class="section">
     <div class="container is-max-desktop has-text-centered">
         <div class="is-centered">
@@ -201,16 +202,13 @@
             representations into two sub-spaces: one focusing more on visual attributes and the other for
             semantic understanding,
             ensuring a more comprehensive and effective
-            multi-modal pre-training strategy. Right: TAMM adaptively utilizes decoupled 3D features for
-            various downstream tasks including linear
-            probing classification (top) and zero-shot classification (bottom), achieving more robust
-            classification results.
+            multi-modal pre-training strategy.
         </p>
 
         <p>
             TAMM adaptively utilizes decoupled 3D features for
             various downstream tasks including linear
-            probing classification (top) and zero-shot classification (bottom), achieving more robust
+            probing classification and zero-shot classification (bottom), achieving more robust
             classification results.
         </p>
     </div>
@@ -218,57 +216,57 @@
 
 <section class="section">
 
-        <div class="columns is-centered">
-            <div class="column is-full-width">
-                <h2 class="title is-3">Results</h2>
+    <div class="columns is-centered">
+        <div class="column is-full-width">
+            <h2 class="title is-3">Results</h2>
 
-                <div class="content has-text-justified">
-                    <p>
-                        HASSOD significantly outperforms the previous self-supervised methods (e.g., FreeSOLO and
-                        CutLER)
-                        in terms of average recall (Mask AR) at all object scales (Small, Medium, and Large).
-                        For example, HASSOD improves Mask AR from 17.0 to 26.0 on SA-1B.
-                        HASSOD also leads to a reduced gap between fully self-supervised models and the supervised model
-                        SAM.
-                        Notably, HASSOD only uses 1/5 of training images and 1/12 of training iterations as CutLER.
-                    </p>
-                </div>
-
-                <div class="content has-text-centered">
-                    Click on the buttons below to see the visual results on different datasets.
-                    <!-- Buttons for Selecting Datasets -->
-                    <div class="buttons is-centered">
-                        <button onclick="showImage('lvis')">LVIS</button>
-                        <button onclick="showImage('objects365')">Objects365</button>
-                        <button onclick="showImage('sa1b')">SA-1B</button>
-                    </div>
-
-                    <!-- Containers for Images -->
-                    <div id="lvis" class="vis-image-container" style="display: none;">
-                        <img src="static/images/HASSOD-lvis.png" alt="LVIS Results">
-                    </div>
-                    <div id="objects365" class="vis-image-container" style="display: none;">
-                        <img src="static/images/HASSOD-obj.png" alt="Objects365 Results">
-                    </div>
-                    <div id="sa1b" class="vis-image-container" style="display: none;">
-                        <img src="static/images/HASSOD-sa1b.png" alt="SA-1B Results">
-                    </div>
-
-                    <script>
-                        function showImage(dataset) {
-                            // Hide all images
-                            document.querySelectorAll('.vis-image-container').forEach(function (el) {
-                                el.style.display = 'none';
-                            });
-
-                            // Show the selected image
-                            document.getElementById(dataset).style.display = 'block';
-                        }
-                    </script>
-                </div>
-
+            <div class="content has-text-justified">
+                <p>
+                    HASSOD significantly outperforms the previous self-supervised methods (e.g., FreeSOLO and
+                    CutLER)
+                    in terms of average recall (Mask AR) at all object scales (Small, Medium, and Large).
+                    For example, HASSOD improves Mask AR from 17.0 to 26.0 on SA-1B.
+                    HASSOD also leads to a reduced gap between fully self-supervised models and the supervised model
+                    SAM.
+                    Notably, HASSOD only uses 1/5 of training images and 1/12 of training iterations as CutLER.
+                </p>
             </div>
+
+            <div class="content has-text-centered">
+                Click on the buttons below to see the visual results on different datasets.
+                <!-- Buttons for Selecting Datasets -->
+                <div class="buttons is-centered">
+                    <button onclick="showImage('lvis')">LVIS</button>
+                    <button onclick="showImage('objects365')">Objects365</button>
+                    <button onclick="showImage('sa1b')">SA-1B</button>
+                </div>
+
+                <!-- Containers for Images -->
+                <div id="lvis" class="vis-image-container" style="display: none;">
+                    <img src="static/images/HASSOD-lvis.png" alt="LVIS Results">
+                </div>
+                <div id="objects365" class="vis-image-container" style="display: none;">
+                    <img src="static/images/HASSOD-obj.png" alt="Objects365 Results">
+                </div>
+                <div id="sa1b" class="vis-image-container" style="display: none;">
+                    <img src="static/images/HASSOD-sa1b.png" alt="SA-1B Results">
+                </div>
+
+                <script>
+                    function showImage(dataset) {
+                        // Hide all images
+                        document.querySelectorAll('.vis-image-container').forEach(function (el) {
+                            el.style.display = 'none';
+                        });
+
+                        // Show the selected image
+                        document.getElementById(dataset).style.display = 'block';
+                    }
+                </script>
+            </div>
+
         </div>
+    </div>
     </div>
 </section>
 
